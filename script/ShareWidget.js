@@ -8,7 +8,7 @@ WidgetIframeJS = {
         let ifrm = document.createElement("iframe");
         ifrm.id = "widgetShareIframe"
         this.createCss();
-        ifrm.setAttribute("src", `https://static.valorizza.com.br/WidgetShare/index.html${parametros}`);
+        ifrm.setAttribute("src", `${process.env.LINK_TO_SERVER}/WidgetShare/index.html${parametros}`);
         divPai.appendChild(ifrm);
         document.body.appendChild(divPai);
     },
